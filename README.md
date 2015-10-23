@@ -6,13 +6,12 @@ Getting and Cleaning Data (033) Course Project
 *README.md description: This README.md explains the purpose of the scripts and markdown files contained in this repo and how they are connected.*
 
 ### CodeBook.md description: 
-The CodeBook.md is a markdown file within this repo that clearly describes the data sources, data variables, references, and any transformations that I performed to download and clean up the source data used during this project. 
+The CodeBook.md is a markdown file within this repo that clearly describes the data sources, data variables, references, and any transformations that I performed to clean up the data and provide a tidy data set
 
 ### run_analysis.R description: 
-The run_analysis.R script within this repo uses data linked to the course website. The linked data represent data collected from the accelerometers from the Samsung Galaxy S smartphone. This run_analysis.R script was built to download, clean and tidy the data. The output is a tidy data set called "tidydata.txt". This R script includes a brief description of the data and the data souce, but mainly details the downloading, merging and transformation of the data.
+The run_analysis.R script within this repo uses data as directed by a weblink on the course website. The data link represent data collected from the accelerometers from the Samsung Galaxy S smartphone. This run_analysis.R script was built to download, clean and tidy the data. The output is a tidy data set called "tidydata.txt". This R script includes a brief description of the data and the data souce, but mainly details the downloading, merging and transformation of the data.
 
 ### This run_analysis.R script was built to download and clean the data and ultimately does the following: 
-### The R script built to get and clean this data is called run_analysis.R and does the following: 
 1. All of the relevant data files were read into data frames and appropriate column headers were added. The data were last downloaded on Thursday, October 22, 2015. 
 2. The training and test sets were combined into a single data set.
 2a. Duplicate columns were removed as they were not needed in the final dataset.

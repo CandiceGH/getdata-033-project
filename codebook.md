@@ -1,7 +1,7 @@
 # CodeBook.md file for Course Project, Week 3 of Cleaning and Getting Data
 ## Candice, October 20, 2015
 
-*CodeBook.md description: A code book that describes the variables, the data, and any transformations or work that I performed to clean up the data used during this project.*
+*CodeBook.md description: A code book that describes the variables, data, and any transformations that I performed to clean up the data and provide a tidy data set.*
 
 ## Data: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
@@ -57,21 +57,21 @@ Variables within the tidy data set are as examined as follows (taken from refere
 3. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 4. For each measurement the mean, stddev, and mean frequency were calculated.
 
-### The R script built to get and clean this data is called run_analysis.R and does the following: 
+### The R script built to download, clean and transform this data is called run_analysis.R and does the following: 
 1. All of the relevant data files were read into data frames and appropriate column headers were added. The data were last downloaded on Thursday, October 22, 2015 
 
 2. The training and test sets were combined into a single data set.
 
-2a. The following duplicated columns were removed as they were not needed in the final dataset:
-fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAccJerk-bandsEnergy()-1,8, fBodyAccJerk-bandsEnergy()-9,16, fBodyAccJerk-bandsEnergy()-17,24, fBodyAccJerk-bandsEnergy()-25,32,
+- The following duplicated columns were removed as they were not needed in the final dataset:
+fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40,         fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAccJerk-bandsEnergy()-1,8, fBodyAccJerk-bandsEnergy()-9,16, fBodyAccJerk-bandsEnergy()-17,24, fBodyAccJerk-bandsEnergy()-25,32,
 
 3. All feature columns were selected thatcontained the strings "mean()" or "std()". This resulted in 88 feature columns, including the subjectID and activity columns 
 
 4. The activity column was converted from a integer to a factor, inserting descriptive labels that describe the activities
 
 5. The column variables were appropriately labeled with descriptive variable names, by:
-5a: Removing the capitalized lettering in the column names
-5b. Relabeling abbreviations in column names to full text and removing untidy data usage of "-" & "," & "()"
+- Removing the capitalized lettering in the column names
+- Relabeling abbreviations in column names to full text and removing untidy data usage of "-" & "," & "()"
 Abbreviation examples are:
 "std" = "standarddeviation"
 "acc" = "acceleration"

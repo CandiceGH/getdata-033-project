@@ -2,8 +2,8 @@
 ## for Course Project, Week 3 of Cleaning and Getting Data
 ## Candice, October 20, 2015
 
-# run_analysis.R description: This script uses data linked to the course website. The linked 
-# data represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
+# run_analysis.R description: This script uses data as directed by a weblink on the course website. 
+# The data link represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 # 
 # Data description: Human Activity Recognition database built from the recordings of 30 
 # subjects performing activities of daily living (ADL) while carrying a waist-mounted 
