@@ -63,7 +63,21 @@ Variables within the tidy data set are as examined as follows (taken from refere
 2. The training and test sets were combined into a single data set.
 
         The following duplicate columns were removed as they were not needed in the final dataset: 
-        fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24, fBodyAcc-bandsEnergy()-25,48, fBodyAccJerk-bandsEnergy()-1,8, fBodyAccJerk-bandsEnergy()-9,16, fBodyAccJerk-bandsEnergy()-17,24, fBodyAccJerk-bandsEnergy()-25,32,
+        fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16, fBodyAcc-bandsEnergy()-17,24,
+        fBodyAcc-bandsEnergy()-25,32, fBodyAcc-bandsEnergy()-33,40,
+        fBodyAcc-bandsEnergy()-41,48, fBodyAcc-bandsEnergy()-49,56,
+        fBodyAcc-bandsEnergy()-57,64, fBodyAcc-bandsEnergy()-1,16,
+        fBodyAcc-bandsEnergy()-17,32, fBodyAcc-bandsEnergy()-33,48,
+        fBodyAcc-bandsEnergy()-49,64, fBodyAcc-bandsEnergy()-1,24,
+        fBodyAcc-bandsEnergy()-25,48, fBodyAcc-bandsEnergy()-1,8, fBodyAcc-bandsEnergy()-9,16,
+        fBodyAcc-bandsEnergy()-17,24, fBodyAcc-bandsEnergy()-25,32,
+        fBodyAcc-bandsEnergy()-33,40, fBodyAcc-bandsEnergy()-41,48,
+        fBodyAcc-bandsEnergy()-49,56, fBodyAcc-bandsEnergy()-57,64,
+        fBodyAcc-bandsEnergy()-1,16, fBodyAcc-bandsEnergy()-17,32,
+        fBodyAcc-bandsEnergy()-33,48, fBodyAcc-bandsEnergy()-49,64,
+        fBodyAcc-bandsEnergy()-1,24,fBodyAcc-bandsEnergy()-25,48,
+        fBodyAccJerk-bandsEnergy()-1,8, fBodyAccJerk-bandsEnergy()-9,16,
+        fBodyAccJerk-bandsEnergy()-17,24, fBodyAccJerk-bandsEnergy()-25,32,
 
 3. All feature columns were selected thatcontained the strings "mean()" or "std()". This resulted in 88 feature columns, including the subjectID and activity columns 
 
