@@ -97,7 +97,7 @@ Variables within the tidy data set are as examined as follows (taken from refere
 
 The tidy data set was output to a .txt file, created with write.table() using row.name=FALSE 
 
-### The output file from the run_analysis.R script is called "tidydata.txt", and has the following variables:
+### The output file from the run_analysis.R script is called "tidydata.txt", and has the following variables (where columns 3 onwards are the mean frequency measurements in units of hertz (Hz)):
 [1] "subjectid";[2] "activity"; [3] "tbodyaccelerationmeanx"; [4] "tbodyaccelerationmeany"; 
 [5] "tbodyaccelerationmeanz"; [6] "tgravityaccelerationmeanx"; [7] "tgravityaccelerationmeany"; [8] "tgravityaccelerationmeanz"; [9] "tbodyaccelerationjerkmeanx"; 
 [10]  "tbodyaccelerationjerkmeany"; [11] "tbodyaccelerationjerkmeanz"; [12] "tbodygyromeanx"; 
