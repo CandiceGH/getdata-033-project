@@ -4,7 +4,7 @@
 *CodeBook.md description: A code book that describes the variables, data, and any transformations that I performed to clean up the data and provide a tidy data set.*
 
 ## Data: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
-One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
+One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
 ### A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -40,7 +40,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 Signals were used to estimate variables of the feature vector for each pattern: '*_[XYZ]$' is used to denote 3-axial signals in the X, Y and Z directions.
 
 ### The dataset includes the following source files:
-1. 'README.txt'
+1. 'README.txt': An explanation of the data set and files provided in the download.
 2. 'features_info.txt': Shows information about the variables used on the feature vector.
 3. 'features.txt': Lists the names of the 561 features.
 4. 'activity_labels.txt': Lists the class labels with their activity name for each of the 6 activities.
@@ -52,7 +52,7 @@ Signals were used to estimate variables of the feature vector for each pattern: 
 
 ### Dataset Variables selected for this project
 Variables within the tidy data set are as examined as follows (taken from reference [1]).
-1. The activity labels consist of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+1. The activity labels consist of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 2. The subjects who carried out the experiment are represented as a number from 1 to 30.
 3. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 4. For each measurement the mean, stddev, and mean frequency were calculated.
@@ -84,14 +84,14 @@ Variables within the tidy data set are as examined as follows (taken from refere
 4. The activity column was converted from a integer to a factor, inserting descriptive labels that describe the activities
 
 5. The column variables were appropriately labeled with descriptive variable names, by:
-- Removing the capitalized lettering in the column names
-- Relabeling abbreviations in column names to full text and removing untidy data usage of "-" & "," & "()"
-Abbreviation examples are:
-"std" = "standarddeviation"
-"acc" = "acceleration"
-"mag" = "magnitude"
-"freq" = "frequency"
-"Gyro" = "Gyroscope"
+        - Removing the capitalized lettering in the column names
+        - Relabeling abbreviations in column names to full text and removing untidy data usage of "-" & "," & "()"
+        Abbreviation examples are:
+        "std" = "standarddeviation"
+        "acc" = "acceleration"
+        "mag" = "magnitude"
+        "freq" = "frequency"
+        "Gyro" = "Gyroscope"
 
 6. A tidy data set was created containing the mean of each feature for each subject and each activity. Thus, subject #1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 86 features for that subject/activity combination. Since there are 30 subjects, there are a total of 180 rows.
 
